@@ -1,6 +1,5 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import Books from './components/Books';
 
 function App() {
 const [books, setBooks] = useState([]);
@@ -80,8 +79,7 @@ const deleteBook= async(bookId)=>{
       value={title}
       onChange={(e)=>setTitle(e.target.value)}
       />
-
-
+      
       <input
       placeholder="Author"
       value={author}
